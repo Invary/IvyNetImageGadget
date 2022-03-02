@@ -1,0 +1,43 @@
+﻿<Window x:Class="Invary.IvyNetImageGadget.SettingItemScriptWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Invary.IvyNetImageGadget"
+        mc:Ignorable="d"
+        Title="{DynamicResource windowTitle}" Height="450" Width="800">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="SettingItemWindowDictionary.ja.xaml"/>
+                <ResourceDictionary Source="SettingItemWindowDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
+    <Grid>
+        <Label Content="{DynamicResource labelScriptCode}" ToolTip="{DynamicResource tooltipScriptCode}" HorizontalAlignment="Left" Margin="249,7,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="{DynamicResource labelClassName}" ToolTip="{DynamicResource tooltipClassName}" HorizontalAlignment="Left" Margin="19,282,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Plugin.strClassName}" ToolTip="{DynamicResource tooltipClassName}" HorizontalAlignment="Left" Margin="100,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+
+        <TextBox Text="{Binding Plugin.strCode}" ToolTip="{DynamicResource tooltipCode}" Margin="249,34,42,52" TextWrapping="Wrap" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True" />
+
+        <ListBox ToolTip="{DynamicResource tooltipRefAsm}" x:Name="listboxRefAsm" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,309,0,16" HorizontalAlignment="Left" Width="192">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="{DynamicResource listboxRefAsmMenu_Add}" Click="Menu_OnAddDll"/>
+                    <MenuItem Header="{DynamicResource listboxRefAsmMenu_Edit}" Click="Menu_OnEditDll"/>
+                    <MenuItem Header="{DynamicResource listboxRefAsmMenu_Remove}" Click="Menu_OnRemoveDll"/>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
+
+        <Button Content="{DynamicResource buttonScriptSample}" Margin="0,10,193,0" Click="OnSampleScript" HorizontalAlignment="Right" Width="72" Height="20" VerticalAlignment="Top" />
+
+        <Button Content="{DynamicResource buttonOK}" Margin="0,0,148,16" Click="OnOk" HorizontalAlignment="Right" Width="72" Height="20" VerticalAlignment="Bottom" />
+        <Button Content="{DynamicResource buttonCancel}" Margin="0,0,42,16" Click="OnCancel" HorizontalAlignment="Right" Width="72" Height="20" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

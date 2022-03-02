@@ -1,0 +1,56 @@
+﻿<Window x:Class="Invary.IvyNetImageGadget.SettingItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Invary.IvyNetImageGadget"
+        mc:Ignorable="d"
+        Title="{DynamicResource windowTitle}" Height="400" Width="500">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="SettingItemWindowDictionary.ja.xaml"/>
+                <ResourceDictionary Source="SettingItemWindowDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
+    <Grid>
+        <Label Content="{DynamicResource labelName}" ToolTip="{DynamicResource tooltipName}" HorizontalAlignment="Left" Margin="19,22,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Name}" ToolTip="{DynamicResource tooltipName}" Margin="100,26,250,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18"/>
+
+        <Label Content="{DynamicResource labelUserURL}" ToolTip="{DynamicResource tooltipUserURL}" HorizontalAlignment="Left" Margin="19,52,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding strUserURL}" ToolTip="{DynamicResource tooltipUserURL}" Margin="100,56,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18"/>
+
+
+        <Label Content="{DynamicResource labelURL}" ToolTip="{DynamicResource tooltipURL}" HorizontalAlignment="Left" Margin="19,82,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding strURL}" ToolTip="{DynamicResource tooltipURL}" Margin="100,86,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18"/>
+
+        <Label Content="{DynamicResource labelRefererURL}" ToolTip="{DynamicResource tooltipRefererURL}" HorizontalAlignment="Left" Margin="19,112,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding strRefererURL}" ToolTip="{DynamicResource tooltipRefererURL}" Margin="100,116,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18"/>
+
+        <Label Content="{DynamicResource labelPreURL}" ToolTip="{DynamicResource tooltipPreURL}" HorizontalAlignment="Left" Margin="19,142,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding strPreURL}" ToolTip="{DynamicResource tooltipPreURL}" Margin="100,146,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18"/>
+
+        <Label Content="{DynamicResource labelPreRefererURL}" ToolTip="{DynamicResource tooltipPreRefererURL}" HorizontalAlignment="Left" Margin="19,172,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding strPreRefererURL}" ToolTip="{DynamicResource tooltipPreRefererURL}" Margin="100,176,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18"/>
+
+        <Label Content="{DynamicResource labelPreRegEx}" ToolTip="{DynamicResource tooltipPreRegEx}" HorizontalAlignment="Left" Margin="19,202,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding strPreRegEx}" ToolTip="{DynamicResource tooltipPreRegEx}" Margin="100,206,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18"/>
+
+        <Label Content="{DynamicResource labelRefreshSecond}" ToolTip="{DynamicResource tooltipRefreshSecond}" HorizontalAlignment="Left" Margin="19,232,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="textboxRefreshSecond" Text="{Binding nRefreshSecond}" ToolTip="{DynamicResource tooltipRefreshSecond}" HorizontalAlignment="Left" Margin="116,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" InputScope="Number" Height="18" />
+
+
+
+
+
+        <Button Content="{DynamicResource buttonOK}" HorizontalAlignment="Right" Margin="0,0,101,16" Width="70" Click="OnOk" Height="20" VerticalAlignment="Bottom"/>
+        <Button Content="{DynamicResource buttonTest}" ToolTip="{DynamicResource tooltipTest}" HorizontalAlignment="Left" Margin="116,0,0,16" VerticalAlignment="Bottom" Width="72" Click="OnTest" />
+        <Button Content="{DynamicResource buttonScript}" ToolTip="{DynamicResource tooltipScript}" HorizontalAlignment="Left" Margin="102,0,0,89" VerticalAlignment="Bottom" Width="72" Click="OnEditScript" />
+        <Label Content="{DynamicResource labelSecondUnit}" HorizontalAlignment="Left" Margin="182,232,0,0" VerticalAlignment="Top" Width="38"/>
+
+    </Grid>
+</Window>

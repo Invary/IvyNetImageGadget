@@ -1,0 +1,68 @@
+﻿<Window x:Class="Invary.IvyNetImageGadget.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Invary.IvyNetImageGadget"
+        mc:Ignorable="d"
+        Title="{DynamicResource windowTitle}" Height="450" Width="800" ShowInTaskbar="False" WindowStyle="None">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="MainWindowDictionary.ja.xaml"/>
+                <ResourceDictionary Source="MainWindowDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
+    <Window.Style>
+        <Style>
+            <Setter Property="WindowChrome.WindowChrome">
+                <Setter.Value>
+                    <WindowChrome CornerRadius="3" GlassFrameThickness="1" ResizeBorderThickness="8" UseAeroCaptionButtons="False" CaptionHeight="0" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Style>
+    <Grid>
+        <Grid x:Name="gridMain">
+        </Grid>
+        <Image Name="imageInformation" ToolTip="{DynamicResource tooltipNewVersionExists}" Source="image/StatusInformation.png" Cursor="Hand" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="40" MouseLeftButtonUp="OnOpenDownloadURL" Visibility="Hidden" />
+    </Grid>
+
+
+
+    <Window.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="{DynamicResource contextMenuMain_OpenUserURL}" Click="Menu_OnOpenUserURL" Name="OpenUserURL">
+                <MenuItem.Icon>
+                    <Image Source="image/BrowserLink_16x.png" />
+                </MenuItem.Icon>
+            </MenuItem>
+
+            <MenuItem Header="{DynamicResource contextMenuMain_UILock}" Click="Menu_OnLock" Name="UILock">
+                <MenuItem.Icon>
+                    <Image Source="image/Lock_16x.png" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="{DynamicResource contextMenuMain_UIUnlock}" Click="Menu_OnUnlock" Name="UIUnlock">
+                <MenuItem.Icon>
+                    <Image Source="image/Unlock_16x.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator />
+            <MenuItem Header="{DynamicResource contextMenuMain_Setting}" Click="Menu_OnSetting">
+                <MenuItem.Icon>
+                    <Image Source="image/setting.png" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="{DynamicResource contextMenuMain_Adjust}" Click="Menu_OnAdjust"/>
+            <Separator />
+            <MenuItem Header="{DynamicResource contextMenuMain_QuitWithoutSave}" Click="Menu_OnQuitWithoutSave"/>
+            <MenuItem Header="{DynamicResource contextMenuMain_Quit}" Click="Menu_OnQuit"/>
+        </ContextMenu>
+    </Window.ContextMenu>
+
+</Window>

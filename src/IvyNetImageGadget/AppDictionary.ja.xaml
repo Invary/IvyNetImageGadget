@@ -1,0 +1,59 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="InvalidCommandlineOption_Title">IvyNetImageGadget</system:String>
+    <system:String x:Key="InvalidCommandlineOption">コマンドラインオプションが不正です。</system:String>
+
+
+
+    <system:String x:Key="MessageBoxInitSetting_Title">設定の初期化</system:String>
+    <system:String x:Key="MessageBoxInitSetting_Text">設定ファイルが見つかりませんでした。設定を初期化しますか？</system:String>
+
+    <system:String x:Key="InputTextCreateShortcut_Title">ショートカットファイルの作成</system:String>
+    <system:String x:Key="InputTextCreateShortcut_Label" xml:space="preserve">ファイル名を入力してください。ショートカットファイルはデスクトップに作成されます。&#13;設定ファイル: </system:String>
+
+    <system:String x:Key="MessageBoxCreateShortcutOverwrite_Text" xml:space="preserve">同じ名前のショットカットがあります。上書きしますか？</system:String>
+    <system:String x:Key="MessageBoxCreateShortcutOverwrite_Title" xml:space="preserve">ショートカットファイルの保存</system:String>
+
+
+    <system:String x:Key="InputTextRefAsmAddNewItem_Title">新規追加</system:String>
+    <system:String x:Key="InputTextRefAsmAddNewItem_Label">アセンブリDLL（ファイル名のみ、もしくはフルパス）</system:String>
+
+    <system:String x:Key="InputTextRefAsmEditItem_Title">編集</system:String>
+    <system:String x:Key="InputTextRefAsmEditItem_Label">アセンブリDLL（ファイル名のみ、もしくはフルパス）</system:String>
+
+    <system:String x:Key="SettingSaveAsDialog_Title">設定ファイルの保存...</system:String>
+    <system:String x:Key="SettingSaveAsDialog_Filter">設定ファイル(*.xml)|*.xml</system:String>
+
+    <system:String x:Key="OnProgressItemDownload_StartDownload_Start" xml:space="preserve">開始</system:String>
+    <system:String x:Key="OnProgressItemDownload_StartDownload_End_Error_ItemImage_null" xml:space="preserve">終了: Error: item/imageがnull</system:String>
+    <system:String x:Key="OnProgressItemDownload_StartDownload_StartImageDownload" xml:space="preserve">開始: 画像ダウンロード</system:String>
+    <system:String x:Key="OnProgressItemDownload_StartDownload_URLmodifiedByScript" xml:space="preserve">  URLがプラグインで変更: </system:String>
+    <system:String x:Key="OnProgressItemDownload_StartDownload_StartPreDownload" xml:space="preserve">開始: プレダウンロード</system:String>
+
+    <system:String x:Key="OnProgressItemDownload_ReleaseThread_Release" xml:space="preserve">開放</system:String>
+
+    <system:String x:Key="OnProgressItemDownload_OnDownloadCompleted_OnDownloadCompleted" xml:space="preserve">ダウンロード完了</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnDownloadCompleted_ErrorTaskNull" xml:space="preserve">  Error: taskがnull</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnDownloadCompleted_ErrorFailedDownload" xml:space="preserve">  Error: ダウンロード失敗</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnDownloadCompleted_ErrorItemOrImageNull" xml:space="preserve">  Error: item/imageがnull</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnDownloadCompleted_ImageIsModifiedByPlugin" xml:space="preserve">  画像がプラグインで変更</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnDownloadCompleted_SetImage" xml:space="preserve">  画像設定</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnDownloadCompleted_SetImage1" xml:space="preserve">  画像設定(1)</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnDownloadCompleted_SetImage2" xml:space="preserve">  画像設定(2)</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnPreDownloadCompleted_OnPreDownloadCompleted" xml:space="preserve">プレダウンロード完了</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnPreDownloadCompleted_StartImageDownload" xml:space="preserve">画像ダウンロード開始</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnPreDownloadCompleted_ErrorTaskNull" xml:space="preserve">  Error: taskがnull</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnPreDownloadCompleted_ErrorFailedDownload" xml:space="preserve">  Error: ダウンロード失敗</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnPreDownloadCompleted_ErrorItemOrImageNull" xml:space="preserve">  Error: item/imageがnull</system:String>
+    <system:String x:Key="OnProgressItemDownload_OnPreDownloadCompleted_UsePreRegEx" xml:space="preserve">  正規表現利用: </system:String>
+    <system:String x:Key="OnProgressItemDownload_OnPreDownloadCompleted_URLmodifiedByRegex" xml:space="preserve">  URLがregexで変更: </system:String>
+
+
+    <system:String x:Key="tooltipImage" xml:space="preserve">前回の更新日時:&#13;</system:String>
+
+
+
+</ResourceDictionary>
+    

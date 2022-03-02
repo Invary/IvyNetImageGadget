@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="windowTitle">MainWindow</system:String>
+
+    <system:String x:Key="tooltipNewVersionExists">New version exists. Click here to open download page by browser.</system:String>
+
+    <system:String x:Key="contextMenuMain_OpenUserURL">Open user URL</system:String>
+    <system:String x:Key="contextMenuMain_UILock">Lock UI</system:String>
+    <system:String x:Key="contextMenuMain_UIUnlock">Unlock UI</system:String>
+    <system:String x:Key="contextMenuMain_Setting">Setting</system:String>
+    <system:String x:Key="contextMenuMain_Adjust">Adjust</system:String>
+    <system:String x:Key="contextMenuMain_Quit">Quit</system:String>
+    <system:String x:Key="contextMenuMain_QuitWithoutSave">Quit w/o save setting</system:String>
+    
+</ResourceDictionary>

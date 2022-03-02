@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="windowTitle">設定</system:String>
+
+    <system:String x:Key="labelImageDirection">画像を並べる方向</system:String>
+    <system:String x:Key="imageDirectionVertical">縦</system:String>
+    <system:String x:Key="imageDirectionHorizon">横</system:String>
+
+    <system:String x:Key="labelImage">画像</system:String>
+
+    <system:String x:Key="checkboxLockUIWhenStartApp">UIをロックした状態で起動</system:String>
+    <system:String x:Key="checkboxAutoCheckUpdate">起動時に1日に1回更新チェック</system:String>
+
+    <system:String x:Key="buttonApply">適用</system:String>
+    <system:String x:Key="buttonClose">閉じる</system:String>
+    <system:String x:Key="buttonSaveAs">保存...</system:String>
+    <system:String x:Key="buttonShortcut">ショートカット...</system:String>
+
+    <system:String x:Key="tooltipDirectionVertical">画像を縦方向に並べる</system:String>
+    <system:String x:Key="tooltipDirectionHorizon">画像を横方向に並べる</system:String>
+    <system:String x:Key="tooltipImageItemListbox">画像。右クリックメニューから追加・編集可能</system:String>
+    <system:String x:Key="tooltipSaveAs">名前を付けて設定を保存</system:String>
+    <system:String x:Key="tooltipShortcut">現在の設定を利用したショートカットをデスクトップに作成する。設定を切り替えて使うのが容易になります</system:String>
+
+    <system:String x:Key="menuImageItemListbox_Add">新規追加</system:String>
+    <system:String x:Key="menuImageItemListbox_Edit">編集</system:String>
+    <system:String x:Key="menuImageItemListbox_Up">上へ</system:String>
+    <system:String x:Key="menuImageItemListbox_Down">下へ</system:String>
+    <system:String x:Key="menuImageItemListbox_Remove">削除</system:String>
+
+    <system:String x:Key="MessageBoxRemoveItem_Title">削除</system:String>
+    <system:String x:Key="MessageBoxRemoveItem_Text">選択項目を削除しますか？</system:String>
+
+</ResourceDictionary>

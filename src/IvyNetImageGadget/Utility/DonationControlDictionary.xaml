@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+
+    <BitmapImage x:Key="image_QR1" UriSource="image/donation/donation_bsc.png"/>
+    <BitmapImage x:Key="image_QR2" UriSource="image/donation/donation_btc.png"/>
+    <BitmapImage x:Key="image_Kofi" UriSource="image/donation/donation_kofi.png"/>
+
+    <system:String x:Key="donationKofiTips" xml:space="preserve">Open ko-fi.com by browser</system:String>
+    <system:String x:Key="donationDescription" xml:space="preserve">If you would like to donate, please do so in the following ways.&#13;It's a great encouragement!</system:String>
+    <system:String x:Key="donationQR1Text" xml:space="preserve">Binance Smart Chain&#13;  BNB, BUSD etc.&#13;&#13;Polygon network&#13;  MATIC, USDC etc.&#13;&#13;Ethereum network&#13;  ETH</system:String>
+    <system:String x:Key="donationQR1Tips" xml:space="preserve">Copy address to clipboard.&#13;0xCbd4355d13CEA25D87F324E9f35A075adce6507c</system:String>
+    <system:String x:Key="donationQR2Text" xml:space="preserve">Bitcoin</system:String>
+    <system:String x:Key="donationQR2Tips" xml:space="preserve">Copy address to clipboard.&#13;1FvzxYriyNDdeA12eaUGXTGSJxkzpQdxPd</system:String>
+
+    <system:String x:Key="donationQR1Label">BSC/Polygon/Etherium</system:String>
+    <system:String x:Key="donationQR2Label">Bitcoin</system:String>
+    <system:String x:Key="donationQR1Address">0xCbd4355d13CEA25D87F324E9f35A075adce6507c</system:String>
+    <system:String x:Key="donationQR2Address">1FvzxYriyNDdeA12eaUGXTGSJxkzpQdxPd</system:String>
+
+    
+    
+</ResourceDictionary>

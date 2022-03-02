@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="windowTitle">Setting</system:String>
+
+    <system:String x:Key="labelImageDirection">Image tiling direction</system:String>
+    <system:String x:Key="imageDirectionVertical">Vertical</system:String>
+    <system:String x:Key="imageDirectionHorizon">Horizon</system:String>
+
+    <system:String x:Key="labelImage">Image item</system:String>
+
+    <system:String x:Key="checkboxLockUIWhenStartApp">Lock UI when start application</system:String>
+    <system:String x:Key="checkboxAutoCheckUpdate">Update check per 24 hour</system:String>
+   
+    <system:String x:Key="buttonApply">Apply</system:String>
+    <system:String x:Key="buttonClose">Close</system:String>
+    <system:String x:Key="buttonSaveAs">Save as...</system:String>
+    <system:String x:Key="buttonShortcut">Shortcut...</system:String>
+
+    <system:String x:Key="tooltipDirectionVertical">Arrange the images vertically.</system:String>
+    <system:String x:Key="tooltipDirectionHorizon">Arrange the images horizontally</system:String>
+    <system:String x:Key="tooltipImageItemListbox">Image. Can be added or edited from the right-click menu.</system:String>
+    <system:String x:Key="tooltipSaveAs">Save settings as.</system:String>
+    <system:String x:Key="tooltipShortcut">Create shortcuts on the desktop using the current settings. Makes it easy to switch between settings.</system:String>
+
+    <system:String x:Key="menuImageItemListbox_Add">Add new</system:String>
+    <system:String x:Key="menuImageItemListbox_Edit">Edit</system:String>
+    <system:String x:Key="menuImageItemListbox_Up">Up</system:String>
+    <system:String x:Key="menuImageItemListbox_Down">Down</system:String>
+    <system:String x:Key="menuImageItemListbox_Remove">Remove</system:String>
+
+    <system:String x:Key="MessageBoxRemoveItem_Title">Remove item</system:String>
+    <system:String x:Key="MessageBoxRemoveItem_Text">Are you sure to remove item?</system:String>
+
+</ResourceDictionary>

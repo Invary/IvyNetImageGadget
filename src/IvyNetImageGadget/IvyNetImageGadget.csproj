@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Invary.IvyNetImageGadget</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\BrowserLink_16x.png" />
+    <None Remove="image\Lock_16x.png" />
+    <None Remove="image\setting.png" />
+    <None Remove="image\StatusInformation.png" />
+    <None Remove="image\Unlock_16x.png" />
+    <None Remove="Utility\image\donation\donation_bsc.png" />
+    <None Remove="Utility\image\donation\donation_btc.png" />
+    <None Remove="Utility\image\donation\donation_kofi.png" />
+    <None Remove="Utility\image\donation\paypayqr.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Link="LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\README.md" Link="README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\BrowserLink_16x.png" />
+    <Resource Include="image\Lock_16x.png" />
+    <Resource Include="image\setting.png" />
+    <Resource Include="image\StatusInformation.png" />
+    <Resource Include="image\Unlock_16x.png" />
+    <Resource Include="Utility\image\donation\donation_bsc.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Utility\image\donation\donation_btc.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CustomToolNamespace>Invary.Utility</CustomToolNamespace>
+    </Resource>
+    <Resource Include="Utility\image\donation\donation_kofi.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CustomToolNamespace>Invary.Utility</CustomToolNamespace>
+    </Resource>
+    <Resource Include="Utility\image\donation\paypayqr.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CustomToolNamespace>Invary.Utility</CustomToolNamespace>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Plugin\Plugin.csproj" />
+  </ItemGroup>
+
+
+
+</Project>

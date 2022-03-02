@@ -1,0 +1,91 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="windowTitle">SettingItemWindow</system:String>
+
+    <system:String x:Key="labelName">Name</system:String>
+    <system:String x:Key="labelUserURL">UserURL</system:String>
+    <system:String x:Key="labelURL">URL</system:String>
+    <system:String x:Key="labelRefererURL">RefererURL</system:String>
+    <system:String x:Key="labelPreURL">PreURL</system:String>
+    <system:String x:Key="labelPreRefererURL">PreRefererURL</system:String>
+    <system:String x:Key="labelPreRegEx">PreRegEx</system:String>
+    <system:String x:Key="labelRefreshSecond">Interval</system:String>
+    <system:String x:Key="labelSecondUnit">sec</system:String>
+    <system:String x:Key="labelClassName">ClassName</system:String>
+
+    <system:String x:Key="listboxRefAsmMenu_Add">Add</system:String>
+    <system:String x:Key="listboxRefAsmMenu_Edit">Edit</system:String>
+    <system:String x:Key="listboxRefAsmMenu_Remove">Remove</system:String>
+
+    <system:String x:Key="buttonOK">OK</system:String>
+    <system:String x:Key="buttonCancel">Cancel</system:String>
+    <system:String x:Key="buttonTest">Test</system:String>
+    <system:String x:Key="buttonScript">Script</system:String>
+    <system:String x:Key="buttonScriptSample">Sample</system:String>
+
+
+    <system:String x:Key="MessageBoxSample_Text">Displays the sample code for the plugin script. This will overwrite the current code. Do you want to continue?</system:String>
+    <system:String x:Key="MessageBoxSample_Title">Ask overwrite</system:String>
+
+
+    <system:String x:Key="tooltipName">Arbitrary name. Does not affect operation.</system:String>
+    <system:String x:Key="tooltipUserURL">The URL of opening browser by right-click menu of the image, which can be left blank.</system:String>
+    <system:String x:Key="tooltipURL" xml:space="preserve">The URL of the image you want to display.&#13;Use {PreDownloadParam0} , replaced to text match by regex at predownload.&#13;Left blank if you want to set URL with a plugin script.</system:String>
+    <system:String x:Key="tooltipRefererURL">Referrer when accessing URLs. Can be left blank.</system:String>
+    <system:String x:Key="tooltipPreURL">URL for two-step download, used when html download is required to determine the image URL.</system:String>
+    <system:String x:Key="tooltipPreRefererURL">Referrer for two-step download</system:String>
+    <system:String x:Key="tooltipPreRegEx" xml:space="preserve">Regular expressions for two-step downloads. Apply this regular expression to the downloaded html,&#13; and the matched value will be replaced {PreDownloadParam0} in URL.</system:String>
+    <system:String x:Key="tooltipRefreshSecond">Update interval (sec). 0 is no update.</system:String>
+    <system:String x:Key="tooltipClassName">The class name of the script. Usually "Program" is used.</system:String>
+
+    <system:String x:Key="labelScriptCode">Plugin script code (C#)</system:String>
+    <system:String x:Key="tooltipScriptCode">Plugin code in C#. Please refer to the sample code for class formatting.</system:String>
+    <system:String x:Key="tooltipRefAsm">Specify the dll file of the assembly to be used by the plugin script. It can be added or edited from the right-click menu</system:String>
+    <system:String x:Key="tooltipCode">Enter the C# script code. Leave blank if no script is required.</system:String>
+    
+    <system:String x:Key="tooltipScript">Edit plugin script.</system:String>
+    <system:String x:Key="tooltipTest">Test image download or test compile plugin script.</system:String>
+    
+    <system:String x:Key="SampleScriptClassName">Program</system:String>
+    <system:String x:Key="SampleScriptCode" xml:space="preserve">using System;
+using System.Windows;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Runtime.InteropServices;
+using System.Threading;
+using System.Globalization;
+using Plugin;
+
+public class Program : IPlugin
+{
+	void IPlugin.OnCreate(IHost host)
+	{
+	}
+
+	void IPlugin.OnClose()
+	{
+	}
+
+	string IPlugin.OnBeforeDownload(string strURL)
+	{
+		//TODO: you can modify image url
+		return strURL;
+	}
+
+	public DrawingImage? OnImageDownloadCompleted(WriteableBitmap bmp)
+	{
+		//return null;	// if you do nothing
+
+		DrawingGroup drawingGroup = new DrawingGroup();
+		using (var drawContent = drawingGroup.Open())
+		{
+			drawContent.DrawImage(bmp, new Rect(0, 0, bmp.PixelWidth, bmp.PixelHeight));
+			//TODO: you can modify image
+		}
+		return new DrawingImage(drawingGroup);
+	}
+}</system:String>
+    
+</ResourceDictionary>
